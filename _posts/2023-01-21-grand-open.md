@@ -1,5 +1,5 @@
 ---
-title: github blog로 글쓰기
+title: grand open
 author: icyou
 date: 2023-01-21 00:00:00 +0900
 categories: [Life]

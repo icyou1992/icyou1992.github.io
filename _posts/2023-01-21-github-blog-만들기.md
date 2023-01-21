@@ -1,5 +1,5 @@
 ---
-title: github blog로 글쓰기
+title: github blog 만들기
 author: icyou
 date: 2023-01-21 00:01:00 +0900
 categories: [Life, Blog]
