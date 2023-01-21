@@ -1,46 +1,67 @@
-This XML file does not appear to have any style information associated with it. The document tree is shown below.
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>http://localhost:4000/posts/grand-open/</loc>
-<lastmod>2023-01-21T18:21:13+09:00</lastmod>
+  <loc>https://icyou1992.github.io/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>http://localhost:4000/posts/github-blog-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
-<lastmod>2023-01-21T18:12:29+09:00</lastmod>
+  <loc>https://icyou1992.github.io/categories/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/categories/</loc>
-<lastmod>2023-01-22T04:28:53+09:00</lastmod>
+  <loc>https://icyou1992.github.io/tags/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/tags/</loc>
-<lastmod>2023-01-22T04:28:53+09:00</lastmod>
+  <loc>https://icyou1992.github.io/archives/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/archives/</loc>
-<lastmod>2023-01-22T04:28:53+09:00</lastmod>
+  <loc>https://icyou1992.github.io/about/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/about/</loc>
-<lastmod>2023-01-22T04:28:53+09:00</lastmod>
+  <loc>https://icyou1992.github.io/posts/github-blog-%EB%A7%8C%EB%93%A4%EA%B8%B0/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+  <loc>https://icyou1992.github.io/posts/grand-open/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/tags/github/</loc>
+  <loc>https://icyou1992.github.io/tags/blog/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/tags/blog/</loc>
+  <loc>https://icyou1992.github.io/tags/github/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>http://localhost:4000/categories/life/</loc>
+  <loc>https://icyou1992.github.io/categories/life/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-<loc>http://localhost:4000/categories/blog/</loc>
+  <loc>https://icyou1992.github.io/categories/blog/</loc>
+  <lastmod>2023-01-21T19:34:50+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
-<url>
-<loc>http://localhost:4000/google9dcc6ed9cb8f9503.html</loc>
-<lastmod>2023-01-22T04:26:16+09:00</lastmod>
-</url>
+
+
 </urlset>
