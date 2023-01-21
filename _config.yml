@@ -26,6 +26,7 @@ description: >-                        # used by seo meta and the atom feed
   blog for icyou
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: 
 # url: 'https://icyou1992.github.io'
 
 github:
