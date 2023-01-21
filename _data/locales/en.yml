@@ -63,8 +63,8 @@ post:
   relate_posts: Further Reading
   share: Share
   button:
-    next: ->
-    previous: <-
+    next: ===>>>
+    previous: <<<===
     copy_code:
       succeed: Copied!
     share_link:
