@@ -31,8 +31,8 @@ url: ''
 github:
   username: icyou1992            # change to your github username
 
-twitter:
-  username: noname           # change to your twitter username
+# twitter:
+#   username: noname           # change to your twitter username
 
 social:
   # Change to your full name.
@@ -77,10 +77,10 @@ theme_mode: dark  # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: 'https://chirpy-img.netlify.app'
+# img_cdn: 'https://chirpy-img.netlify.app'
 
 # the avatar on sidebar, support local or CORS resources
-avatar: '/commons/avatar.jpg'
+avatar: '/assets/img/favicons/android-icon-192x192.png'
 
 # boolean type, the global switch for ToC in posts.
 toc: true
@@ -158,7 +158,7 @@ defaults:
       layout: page
       permalink: /:title/
   - scope:
-      path: assets/img/profile
+      path: assets/img/favicons
     values:
       swcache: true
   - scope:
