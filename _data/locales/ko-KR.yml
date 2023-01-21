@@ -63,8 +63,8 @@ post:
   relate_posts: 관련된 글
   share: 공유하기
   button:
-    next: 다음 글
-    previous: 이전 글
+    next: ===>>>
+    previous: <<<===
     copy_code:
       succeed: 복사되었습니다!
     share_link:
