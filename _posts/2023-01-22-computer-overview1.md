@@ -1,8 +1,8 @@
 ---
-title: 컴퓨터 개론
+title: 컴퓨터 개론 1
 author: icyou
 date: 2023-01-22 00:00:00 +0900
-categories: [Computer Science]
+categories: [Computer Science, Overview]
 tags: [cs, computer science, 개론, introduction]
 pin: true
 ---
@@ -82,13 +82,15 @@ Page Replacement Algorithm
 > file의 크기가 너무 커서 inode에 저장할 pointer의 개수를 넘어가면(10개), file block들의 pointer(주소)를 저장된 간접 block pointer를 사용한다.
 
 - Linux File directory <br/>
-![Desktop View](/assets/posts/20230122/File_system_tree.jpg){: .w-70 .normal}
+![Desktop View](/assets/img/posts/20230122/linuxDir.jpg){: .w-70 .normal}
 
 
 
 
 
 <br/><br/><br/><br/>
-참고 : [한빛 미디어 컴퓨터 개론](https://www.hanbit.co.kr/store/books/look.php?p_code=B1315669526)
+참고
+- [한빛 미디어 컴퓨터 개론](https://www.hanbit.co.kr/store/books/look.php?p_code=B1315669526)
+- [geeksforgeeks](https://www.geeksforgeeks.org/linux-file-hierarchy-structure/)
 
  
