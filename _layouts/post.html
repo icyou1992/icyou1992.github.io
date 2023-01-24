@@ -12,20 +12,20 @@ tail_includes:
 <h1 data-toc-skip>{{ page.title }}</h1>
 
 <div class="post-meta text-muted">
-    <!-- published date -->
-    <span>
-      {{ site.data.locales[site.lang].post.posted }}
-      {% include datetime.html date=page.date tooltip=true %}
-    </span>
+  <!-- published date -->
+  <span>
+    {{ site.data.locales[site.lang].post.posted }}
+    {% include datetime.html date=page.date tooltip=true %}
+  </span>
 
-    <!-- lastmod date -->
-    {% if page.last_modified_at %}
-    <span>
-      {{ site.data.locales[site.lang].post.updated }}
-      {% include datetime.html date=page.last_modified_at tooltip=true %}
-    </span>
-    {% endif %}
-
+  <!-- lastmod date -->
+  {% if page.last_modified_at %}
+  <span>
+    {{ site.data.locales[site.lang].post.updated }}
+    {% include datetime.html date=page.last_modified_at tooltip=true %}
+  </span>
+  {% endif %}
+  
   {% if page.image %}
     {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
     {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
