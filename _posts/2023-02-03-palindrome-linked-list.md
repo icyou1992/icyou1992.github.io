@@ -2,7 +2,7 @@
 title: Palindrome Linked List
 author: icyou
 date: 2023-02-03 00:00:00 +0900
-categories: [Algorithm]
+categories: [Computer Science, Algorithm]
 tags: [Algorithm]
 pin: true
 math: true
