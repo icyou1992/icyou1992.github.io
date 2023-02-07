@@ -21,7 +21,7 @@ timezone: Asia/Seoul
 
 title: icyou                       # the main title
 
-tagline: Free your mind Freedom comes at a price            # it will display as the sub-title
+tagline: Free your mind <br/> Freedom comes at a price            # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   blog for icyou
