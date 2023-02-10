@@ -9,10 +9,10 @@ math: true
 ---
 
 ## metric 수집 방식
-- push: monitoring 자원에서 서버로 지표들을 전송한다. 서버로 지표를 전송하기 위해 각 monitoring 자원에 agent 설치가 필요하다. 각 monitoring 자원들이 서버로 지표를 전송하기 때문에 보안성 측면에서 안전하다.
-<br/> ex) Nagios, Zabbix
-- pull: 서버에서 monitoring 자원들에게 지표 전송을 요청하여 받는다. 서버에서 monitoring 자원들을 관리할 수 있기 때문에 monitoring 지표들의 설정을 일괄적으로 변경하거나 monitoring 자원들의 health check를 확인하는 것이  편리하지만, cloud에서 scale in/out 되는 자원들에게 지표 전송을 요청하기 위해 service discovery라는 기능이 필요하다.
-<br/> ex) Prometheus, Datadog, collectd
+- push: monitoring 자원에서 서버로 지표들을 전송한다. 서버로 지표를 전송하기 위해 각 monitoring 자원에 agent 설치가 필요하다. 각 monitoring 자원들이 서버로 지표를 전송하기 때문에 보안성 측면에서 안전하다.  
+ex) Nagios, Zabbix
+- pull: 서버에서 monitoring 자원들에게 지표 전송을 요청하여 받는다. 서버에서 monitoring 자원들을 관리할 수 있기 때문에 monitoring 지표들의 설정을 일괄적으로 변경하거나 monitoring 자원들의 health check를 확인하는 것이  편리하지만, cloud에서 scale in/out 되는 자원들에게 지표 전송을 요청하기 위해 service discovery라는 기능이 필요하다.  
+ex) Prometheus, Datadog, collectd
 
 ![Desktop View](/assets/img/posts/20230129/pushpull.png){: .w-70 .normal}
 
@@ -68,9 +68,31 @@ scrape_configs:
       - targets: ['localhost:9090']
 ```
 
+## Exporter
+- 지표들을 수집하기 위해 target에 설치하는 agent
+- exporter는 http endpoint로 수집한 metric을 노출시키고 prometheus는 http rest api를 통해 metric을 수집함
+
+## Service Discovery
+- network 내에서 data를 수집당하는 client를 자동으로 검색하는 기술
+- cloud 환경에서 auto scaling이 되는 target들을 자동으로 추가하거나 삭제함
+- service discovery 실행 과정
+  1. provider의 위치 정보를 registry에 등록
+  2. consumer가 registry에 provider의 위치를 요청
+  3. consumer는 받은 provider의 위치 정보를 토대로 직접 provider에게 요청
+    * 여기서 provider가 data를 수집당하는 client, consumer가 data를 모으는 server
+![Desktop View](/assets/img/posts/20230129/service-discovery.webp){: .w-70 .normal}
+
+- client -> service discovery
+![Desktop View](/assets/img/posts/20230129/service-discovery1.webp){: .w-70 .normal}
+
+- server -> service discovery
+![Desktop View](/assets/img/posts/20230129/service-discovery2.webp){: .w-70 .normal}
+
+
 <br/><br/><br/><br/>
 참고 
 - [alibaba blog](https://www.alibabacloud.com/blog/pull-or-push-how-to-select-monitoring-systems_599007)
 - [prometheus.io](https://prometheus.io/docs/introduction/overview/)
 - [https://umanking.github.io/2021/08/19/prometheus-grafana-example/](https://umanking.github.io/2021/08/19/prometheus-grafana-example/)
 - [https://prometheus.io/docs/prometheus/latest/installation/](https://prometheus.io/docs/prometheus/latest/installation/)
+- [https://www.baeldung.com/cs/service-discovery-microservices](https://www.baeldung.com/cs/service-discovery-microservices)
