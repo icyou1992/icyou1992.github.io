@@ -44,15 +44,8 @@ math: true
 - architecture
 ![Desktop View](/assets/img/posts/20230129/prometheus-architecture.png){: .w-70 .normal}
 
-- docker로 prometheus 설치하기
-```
-docker run \
-    -p 9090:9090 \
-    -v /path/to/prometheus.yml:/etc/prometheus/prometheus.yml \
-    prom/prometheus
-```
+* prometheus.yml  
 
-- prometheus.yml
 ```
 global:
   scrape_interval:     15s # By default, scrape targets every 15 seconds.
