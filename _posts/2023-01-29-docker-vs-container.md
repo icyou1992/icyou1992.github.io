@@ -2,7 +2,7 @@
 title: docker -> containerd
 author: icyou
 date: 2023-01-29 00:00:00 +0900
-categories: [OS, docker]
+categories: [Infra, OS]
 tags: [OS, docker]
 pin: true
 math: true

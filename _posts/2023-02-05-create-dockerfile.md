@@ -2,7 +2,7 @@
 title: dockerfile 만들어보기
 author: icyou
 date: 2023-02-05 00:00:00 +0900
-categories: [OS, docker]
+categories: [Infra, OS]
 tags: [OS, docker]
 pin: true
 math: true
