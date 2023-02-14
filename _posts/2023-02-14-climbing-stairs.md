@@ -40,7 +40,7 @@ class Solution:
 ```
 위와 같이 재귀를 이용하여 문제를 풀면 아래와 같이 동일한 함수의 값을 중복해서 구하게 됩니다.
 
-![Desktop View](/assets/img/posts/20230209/dnsquery.png){: .w-70 .normal}
+![Desktop View](/assets/img/posts/20230214/dp.png){: .w-70 .normal}
 
 이 불필요한 중복 계산을 피하기 위해 배열에 함숫값을 저장하는 memoization을 사용합니다.
 
