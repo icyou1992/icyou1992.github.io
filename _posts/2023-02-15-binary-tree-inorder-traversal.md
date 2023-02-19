@@ -1,5 +1,5 @@
 ---
-title: Binary Tree Inorder Traversal
+title: Convert Sorted Array to Binary Search Tree
 author: icyou
 date: 2023-02-15 00:00:00 +0900
 categories: [Computer Science, Algorithm]
@@ -10,7 +10,7 @@ math: true
 
 ## Leetcode Problem
 
-### Binary Tree Inorder Traversal
+### Convert Sorted Array to Binary Search Tree
 주어진 tree에 대해서 inorder로 순회한 결과를 배열에 저장하는 문제입니다.  
 
 ```
