@@ -11,7 +11,7 @@ math: true
 ## Leetcode Problem
 
 ### Balanced Binary Tree
-이진 tree가 주어졌을 때, height-balanced한지를 판별하는 문제합니다.
+이진 tree가 주어졌을 때, height-balanced한지를 판별하는 문제입니다.
 
 ```
 class Solution:
@@ -28,8 +28,8 @@ class Solution:
 ```
 height-balanced하다는 개념을 잘못 이해하여 아래와 같이 잘못 풀었지만, 개념을 검색해보니 AVL tree와 같다는 것을 알아냈습니다.  
 
-- AVL Tree(height-balanced Tree) 
-모든 node의 왼쪽과 오른쪽 부분 tree의 높이 차이가 1 이하인 binary tree  
+AVL Tree(height-balanced Tree) 
+- 모든 node의 왼쪽과 오른쪽 부분 tree의 높이 차이가 1 이하인 binary tree  
 개념을 찾아보고 나서 이 문제는 각 node를 순회하며 높이 차이를 구하는 문제라는 것을 깨달았습니다. 즉, tree를 순회하는 문제와 높이를 구하는 문제를 합친 것입니다. 순회하는 방식은 높이를 구할 때, 즉 해당 node를 순회할 때 연산이 제일 많이 발생하므로, node 순회를 마지막으로 하는 postorder를 활용했습니다.  
   
 잘못된 풀이는 아래와 같습니다.  
@@ -52,7 +52,6 @@ class Solution:
         return True if isFilled(root.left, root.right) and abs(calHeight(root.left) - calHeight(root.right)) < 2 else False
 ```
 이 풀이는 제가 height-balanced라는 개념을 오른쪽과 왼쪽 node의 높이 차이가 1일 뿐만 아니라 각 node의 오른쪽 왼쪽 node가 모두 없거나 모두 있는 두 경우만 있다는 것으로 오해하여 잘못 푼 풀이입니다.  
-
 
 ```
 class Solution:
