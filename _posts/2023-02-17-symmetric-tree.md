@@ -3,7 +3,7 @@ title: Symmetric Tree
 author: icyou
 date: 2023-02-17 00:00:00 +0900
 categories: [Computer Science, Algorithm]
-tags: [Algorithm]
+tags: [Algorithm, Leetcode]
 pin: true
 math: true
 ---
