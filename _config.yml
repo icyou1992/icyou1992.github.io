@@ -203,4 +203,5 @@ jekyll-archives:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
   # - jekyll-paginate
