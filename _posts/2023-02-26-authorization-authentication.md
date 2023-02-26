@@ -12,7 +12,7 @@ math: true
 - Authentication(인증): Login
 - Authorization(인가): Authority(권한)
 
-![Desktop View](/assets/img/posts/20230225/auth.jpg){: .w-70 .normal}
+![Desktop View](/assets/img/posts/20230226/auth.jpg){: .w-70 .normal}
 
 | Authentication | Authorization |
 |:-|-:|
