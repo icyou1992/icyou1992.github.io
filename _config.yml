@@ -202,5 +202,5 @@ jekyll-archives:
     category: /categories/:name/
 
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
+  # - jekyll-paginate
