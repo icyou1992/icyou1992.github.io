@@ -1,7 +1,7 @@
 ---
 title: Valid Palindrome
 author: icyou
-date: 2023-02-23 00:00:00 +0900
+date: 2023-02-26 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: true
