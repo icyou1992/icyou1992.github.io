@@ -1,7 +1,7 @@
 ---
 title: Number of 1 Bits
 author: icyou
-date: 2023-03-05 00:00:00 +0900
+date: 2023-03-06 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: true
