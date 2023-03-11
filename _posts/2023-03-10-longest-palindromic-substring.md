@@ -1,7 +1,7 @@
 ---
 title: Longest Palindromic Substring
 author: icyou
-date: 2023-03-09 00:00:00 +0900
+date: 2023-03-10 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: true
