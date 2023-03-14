@@ -1,7 +1,7 @@
 ---
 title: Majority Element
 author: icyou
-date: 2023-03-02 00:00:00 +0900
+date: 2023-03-03 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: true
