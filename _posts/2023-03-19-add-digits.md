@@ -1,5 +1,5 @@
 ---
-title: Happy Number
+title: Add Digits
 author: icyou
 date: 2023-03-19 00:00:00 +0900
 categories: [Computer Science, Algorithm]
@@ -10,7 +10,7 @@ math: true
 
 ## Leetcode Problem
 
-### Happy Number
+### Add Digits
 각 자릿 수를 더했을 때 한자릿 수가 될 경우까지 각 자릿 수를 더하여 그 숫자를 구하는 문제입니다.
 
 ```
