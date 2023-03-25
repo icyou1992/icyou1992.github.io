@@ -1,7 +1,7 @@
 ---
 title: Largest Odd Number in String
 author: icyou
-date: 2023-03-23 00:00:00 +0900
+date: 2023-03-24 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: true
