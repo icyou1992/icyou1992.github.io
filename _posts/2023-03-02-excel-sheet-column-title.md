@@ -1,7 +1,7 @@
 ---
-title: Pascal's Triangle II
+title: Excel Sheet Column Title
 author: icyou
-date: 2023-02-24 00:00:00 +0900
+date: 2023-03-02 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: true
@@ -10,19 +10,17 @@ math: true
 
 ## Leetcode Problem
 
-### Pascal's Triangle II
-rowIndex가 주어졌을 때, 파스칼 삼각형에서 해당 층의 배열을 구하는 문제입니다.
+### Excel Sheet Column Title
+columnNumber가 주어졌을 때, Excel의 column 이름을 구하는 문제입니다.
 
 ```
 class Solution:
-    def getRow(self, rowIndex: int) -> List[int]:
-        pascal = [[1]]
-        for i in range(1, rowIndex+1):
-            pascal.append([x + y for x, y in zip([0] + pascal[i-1], pascal[i-1] + [0])])
-        return pascal[rowIndex]
+    def convertToTitle(self, columnNumber: int) -> str:
+        return self.convertToTitle((columnNumber - 1)//26) + chr(65 + (columnNumber - 1)%26) if columnNumber > 26 else chr(65 + (columnNumber - 1)%26)
 ```
-이전 solution의 풀이를 활용하여 해답을 구했습니다.
+n진법으로 변환하는 문제와 논리가 같지만 0이 없다는 점에서 columnNumber에 -1을 해줘야합니다.
+
 
 <br/><br/><br/><br/>
 참고 
-- [https://leetcode.com/problems/pascals-triangle-ii/submissions/904046846/](https://leetcode.com/problems/pascals-triangle-ii/submissions/904046846/)
+- [https://leetcode.com/problems/excel-sheet-column-title/submissions/907679529/](https://leetcode.com/problems/excel-sheet-column-title/submissions/907679529/)
