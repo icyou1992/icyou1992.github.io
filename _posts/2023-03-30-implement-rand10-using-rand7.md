@@ -1,7 +1,7 @@
 ---
 title: Implement Rand10() Using Rand7()
 author: icyou
-date: 2023-03-29 00:00:00 +0900
+date: 2023-03-30 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: true
@@ -22,7 +22,7 @@ class Solution:
         """
         return rand7() + rand7() % 3
 ```
-독해력이 부족해서 각 1부터 10까지 나올 확률이 동일해야 한다는 것을 파악하지 못했습니다.  
+`uniform`이라는 단어를 알지 못해서 각 1부터 10까지 나올 확률이 동일해야 한다는 것을 파악하지 못했습니다.  
 
 ```
 class Solution:
