@@ -4,7 +4,7 @@ author: icyou
 date: 2023-01-21 00:00:00 +0900
 categories: [Life]
 tags: [github, blog]
-pin: true
+pin: false
 ---
 
 ### github blog를 만들었다!
