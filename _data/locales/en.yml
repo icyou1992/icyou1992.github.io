@@ -63,8 +63,8 @@ post:
   relate_posts: Further Reading
   share: Share
   button:
-    next: <h1> > </h1>
-    previous: <h1> < </h1>
+    next: NEXT
+    previous: PREV
     copy_code:
       succeed: Copied!
     share_link:
