@@ -1,7 +1,7 @@
 ---
 title: Terraform state 관리
 author: icyou
-date: 2023-04-17 00:00:00 +0900
+date: 2023-04-18 00:00:00 +0900
 categories: [Cloud, Terraform]
 tags: [Terraform]
 pin: true

@@ -24,6 +24,8 @@ terraform aws module을 사용한다면, 비교적 편리하게 eks를 생성할
 
 - kubernetes resource를 생성할 때, `Unauthorized` 에러를 마주한다면, provider 문제일 가능성이 높습니다. 제 경우에는 token이 만료되는 것을 막기 위해 exec plugin을 통해 `eks get-token` 명령어로 token을 받는 provider를 설정하였는데, `Unauthorized` 에러가 발생하였습니다. aws_eks_cluster_auth를 통해 token을 받는 방식으로 바꿨더니 해결되는 것으로 보아 일종의 bug인 것 같습니다.
 
+- `Unable to connect to the server: dial tcp i/o time out` 에러가 발생하는 경우 cluster에 문제가 없다면 security group 문제일 가능성이 있습니다. cluster의 control plane이 kubectl 서버와 통신하기 위해서는 443 port를 열어줘야 합니다.
+
 <br/><br/><br/><br/>
 참고 
 - [https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html](https://docs.aws.amazon.com/eks/latest/userguide/troubleshooting.html)
