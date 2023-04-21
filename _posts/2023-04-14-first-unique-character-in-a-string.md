@@ -11,7 +11,7 @@ math: true
 ## Leetcode Problem
 
 ### First Unique Character in a String
-문자열 s가 주어졌을 때, s 내에서 유일한 문자 중, 첫 번째 문자의 index를 구하는 문제입니다.
+문자열 s가 주어졌을 때, s 내에서 유일한 각각의 문자들 중, 첫 번째 문자의 index를 구하는 문제입니다.
 
 ```
 from collections import Counter

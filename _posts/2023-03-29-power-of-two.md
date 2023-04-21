@@ -48,7 +48,7 @@ class Solution:
 ```
 solution의 풀이입니다.  
 bit 연산을 통해 한 줄로 풀 수도 있네요.  
-하지만 이진 탐색 방식의 풀이가 더 성능이 좋습니다. solution의 풀이는 O(1)이고, 이진 탐색의 풀이는 O(logn)이므로 testcase가 많아지고 숫자가 커진다면 solution의 풀이가 더 효율적일 것 같습니다.
+하지만 이진 탐색 방식의 풀이가 더 성능이 좋습니다. solution의 풀이는 bit 연산으로 인해 O(n)이고, 이진 탐색의 풀이는 O(logn)입니다.
 
 
 <br/><br/><br/><br/>

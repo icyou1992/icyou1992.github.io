@@ -11,7 +11,7 @@ math: true
 ## Leetcode Problem
 
 ### Find the Difference
-문자열 s와 그 s에 문자 하나를 추가에 순서를 뒤섞은 문자열 t가 주어졌을 때, 어떤 문자가 추가되었는지를 구하는 문제입니다.
+문자열 s와 그 s에 문자 하나를 추가하여 순서를 뒤섞은 문자열 t가 주어졌을 때, 어떤 문자가 추가되었는지를 구하는 문제입니다.
 
 ```
 from collections import Counter
