@@ -42,17 +42,11 @@ class Solution:
                 next_greater[stack.pop()] = num
             stack.append(num)
         
-        result = []
-        for num in nums1:
-            if num in next_greater:
-                result.append(next_greater[num])
-            else:
-                result.append(-1)
-        
-        return result
+        return [ next_greater[num] if num in next_greater else -1 for num in nums1 ]
 ```
 solution의 풀이입니다.  
-stack과 dictionary 자료형을 활용하여 index로 여러번 순회하는 낭비를 덜 수 있습니다.
+nums2의 원소를 key, next greater에 해당하는 값을 value로 하는 dictionary를 통해 nums2.index로 여러번 순회하는 낭비를 덜 수 있습니다.  
+
 
 
 
