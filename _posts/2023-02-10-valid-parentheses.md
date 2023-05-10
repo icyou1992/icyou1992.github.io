@@ -11,7 +11,7 @@ math: true
 ## Leetcode Problem
 
 ### Valid Parentheses
-주어진 문자열에서 괄호가 순서대로 잘 닫혀있는지 판별하는 문제입니다.
+주어진 문자열에서 괄호가 순서대로 잘 닫혀있는지 판별하는 문제입니다.  
 
 ```
 class Solution:
