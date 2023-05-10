@@ -14,7 +14,7 @@ math: true
 Linux shell이나 command line interpreter에서 구동되도록 작성된 언어입니다.
 
 ### 변수
-- 변수 사용  
+* 변수 사용  
 
 ```
 #!/bin/bash
@@ -28,10 +28,10 @@ echo 'my name is ${name}' # '' 안이므로 my name is ${name} 그대로 출력�
 printf "%s" $pass
 ```
 
-- 지역 변수  
+* 지역 변수  
 local을 변수명 앞에 붙여줘야만 합니다.
 
-- 매개 변수
+* 매개 변수
 
 ```
 echo "script name: ${0}"
@@ -42,7 +42,7 @@ echo "매개변수 1: ${1}"
 echo "매개변수 2: ${2}"
 ```
 
-- 변수 연산
+* 변수 연산
 Bash 변수는 문자열이기 때문에 특수한 문법을 통해 연산을 해야합니다.
 1. expr
 2. let
@@ -80,7 +80,7 @@ if (( ${num1} < ${num2} )); then # (( ))를 사용하면 비교식을 기호로 
 fi
 ```
 
-- file 검사
+* file 검사
 
 ```
 if [ -d ${변수} ]; then     # ${변수}의 디렉토리가 존재하면 참
