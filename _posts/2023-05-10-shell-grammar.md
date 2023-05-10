@@ -14,7 +14,8 @@ math: true
 Linux shell이나 command line interpreter에서 구동되도록 작성된 언어입니다.
 
 ### 변수
-- 변수 사용
+- 변수 사용  
+
 ```
 #!/bin/bash
 
@@ -27,9 +28,11 @@ echo 'my name is ${name}' # '' 안이므로 my name is ${name} 그대로 출력�
 printf "%s" $pass
 ```
 
-- 지역 변수 
+- 지역 변수  
 local을 변수명 앞에 붙여줘야만 합니다.
+
 - 매개 변수
+
 ```
 echo "script name: ${0}"
 echo "매개변수 갯수: ${#}"
@@ -44,6 +47,7 @@ Bash 변수는 문자열이기 때문에 특수한 문법을 통해 연산을 �
 1. expr
 2. let
 3. $(())
+
 ```
 #!/bin/bash
 
@@ -64,6 +68,7 @@ echo mul:$((num1*num2))
 2. << "END" ~ >>
 
 ### if
+
 ```
 if [ 값1 비교식 값2 ]  # 반드시 if 와 [] 사이, [] 안에 공백이 존재해야 합니다.
 ~
@@ -74,7 +79,9 @@ if (( ${num1} < ${num2} )); then # (( ))를 사용하면 비교식을 기호로 
     echo "yes"
 fi
 ```
+
 - file 검사
+
 ```
 if [ -d ${변수} ]; then     # ${변수}의 디렉토리가 존재하면 참
 if [ ! -d ${변수} ]; then	  # ${변수}의 디렉토리가 존재하지 않으면 참
@@ -102,6 +109,7 @@ then
 ```
 
 ### for
+
 ```
 for ((i=1; i<=4; i++)); do # 비교식을 쓰므로 (( ))를 활용합니다.
     echo $i
