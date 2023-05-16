@@ -11,7 +11,7 @@ math: true
 ## Leetcode Problem
 
 ### Diameter of Binary Tree
-
+주어진 Binary Tree에서 왼쪽 끝 노드부터 오른쪽 끝 노드까지의 최대 길이를 구하는 문제입니다.
 
 ```
 class Solution:
