@@ -1,7 +1,7 @@
 ---
 title: Student Attendance Record I
 author: icyou
-date: 2023-05-12 00:00:00 +0900
+date: 2023-05-16 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: false
