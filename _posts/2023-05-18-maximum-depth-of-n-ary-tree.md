@@ -2,7 +2,7 @@
 title: Maximum Depth of N-ary Tree
 
 author: icyou
-date: 2023-05-17 00:00:00 +0900
+date: 2023-05-18 00:00:00 +0900
 categories: [Computer Science, Algorithm]
 tags: [Algorithm, Leetcode]
 pin: false
