@@ -28,8 +28,8 @@ class Solution:
         return cnt
 ```
 먼저, a, b, c를 비교하기 위해 binary로 바꾸고 비교할 때 index error가 나지 않기 위해 문자열로 바꾼 a, b, c의 최대 길이만큼 0을 채워줍니다.
-이후 for 문을 돌면서 c에서 0이 나오는 경우는 a와 b bit를 모두 0으로 바꿔야하므로 개수만큼, 1이 나오는 경우는 a와 b bit가 모두 0일 경우, 하나만 바꾸고 1 이상일 경우, 바꾸지 않아야 하므로 max(1 - (int(a\[i\]) + int(b\[i\])), 0) 식을 사용합니다.
+이후 for 문을 돌면서 c에서 0이 나오는 경우는 a와 b bit를 모두 0으로 바꿔야하므로 개수만큼, 1이 나오는 경우는 a와 b bit가 모두 0일 경우, 하나만 바꾸고 1 이상일 경우, 바꾸지 않아야 하므로 max(1 - (int(a\[i\]) + int(b\[i\])), 0) 식을 사용합니다.  
 
 <br/><br/><br/><br/>
-참고 
+참고  
 - [https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/submissions/965779303/](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/submissions/965779303/)
