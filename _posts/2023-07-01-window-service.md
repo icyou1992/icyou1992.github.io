@@ -1,7 +1,7 @@
 ---
 title: Jenkins -> Windows
 author: icyou
-date: 2023-05-04 00:00:00 +0900
+date: 2023-07-01 00:00:00 +0900
 categories: [CICD, Jenkins]
 tags: [Jenkins, Windows]
 pin: true
