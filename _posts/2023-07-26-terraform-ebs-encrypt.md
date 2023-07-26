@@ -1,9 +1,9 @@
 ---
 title: Terraform에서 EBS encrypt
 author: icyou
-date: 2023-07-01 00:00:00 +0900
-categories: [CICD, Jenkins]
-tags: [Jenkins, Windows]
+date: 2023-07-26 00:00:00 +0900
+categories: [Cloud, Terraform]
+tags: [Terraform, AWS]
 pin: true
 math: true
 ---
