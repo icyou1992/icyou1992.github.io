@@ -1,5 +1,5 @@
 ---
-title: Tomcat Trouble Shooting
+title: Tomcat Trouble Shooting 1
 author: icyou
 date: 2023-07-29 00:00:00 +0900
 categories: [Middleware, Tomcat]
@@ -8,7 +8,7 @@ pin: true
 math: true
 ---
 
-### Tomcat Trouble Shooting
+### Tomcat Trouble Shooting 1
 - 이번에 처음 tomcat을 사용해보면서, spring boot backend를 외장 tomcat으로 기동시킬 때 발생한 문제와 원인 및 그 해결책을 정리합니다.
 
 - 문제
@@ -18,7 +18,7 @@ math: true
 tomcat version과 jdk version이 호환되지 않아 app이 기동되지 않았습니다. 내장 tomcat version은 jdk version과 호환되는 version인 반면, 외장 tomcat은 그보다 낮은 version이어서 app 자체가 기동되지 못했습니다.
 
 - 실마리
-내장 tomcat으로 app을 기동했을 때, 잘 올라가는데 외장 tomcat으로는 잘 기동되지 않았습니다.
+내장 tomcat으로 app을 기동했을 때, 잘 올라가는데 외장 tomcat으로는 잘 기동되지 않았습니다. (log에 Spring 화면이 나타나지 않았습니다.)
 
 - 헤맸던 원인
 1. tomcat 및 spring boot를 아예 처음 써보는 상황이었습니다.
