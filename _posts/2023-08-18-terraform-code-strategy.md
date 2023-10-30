@@ -29,6 +29,30 @@ network 부분은 구성이 바뀔 경우 서비스에 심각한 영향을 끼�
 #### 5. terraform-aws-module 사용은 최대한 지양합니다.
 terraform-aws-module은 유연성이 제한됩니다. 뿐만 아니라 output이 정해져 있어서 원하는 resource arn이 output에 없을 경우, data로 해당 resource를 가져와야 하는데, 이도 해당 resource의 정보를 알고 있어야 해서 실용성이 떨어집니다.
 
+#### 6. module의 입력값을 활용하기 위해 flatten을 활용합니다.
+aws architecture 상에서 resource 간의 종속성에 따라 variables 입력값을 2중 object 또는 3중 object 형식으로 구성해야할 수 있습니다. 이 때 terraform flatten 함수를 활용합니다.  
+example)
+```
+lambdas_s3_mapping = flatten([
+  for kl, vl in lookup(vl, "triggers", []) : [
+    for ks, vs in lookup(sv, "s3", []) : {
+      key = "${kl}-${ks}"
+      lambda = kl
+      arn = ~
+      sqs = ks
+    }
+  ]
+])
 
+lambdas = {
+  lambda_name = {
+    triggers = {
+      s3 = {
+        ~
+      }
+    }
+  }
+}
+```
 
 
