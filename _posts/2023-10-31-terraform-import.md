@@ -3,7 +3,7 @@ title:  Terraform import 시 유의할 점
 author: icyou
 date: 2023-10-31 00:00:00 +0900
 categories: [Cloud]
-tags: [Terraform]
+tags: [Terraform, object, array]
 pin: true
 math: true
 ---
