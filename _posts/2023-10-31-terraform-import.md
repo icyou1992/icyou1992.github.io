@@ -3,7 +3,7 @@ title:  Terraform import 시 유의할 점
 author: icyou
 date: 2023-10-31 00:00:00 +0900
 categories: [Cloud]
-tags: [Terraform, object, array]
+tags: [Terraform, hcl, object, array]
 pin: true
 math: true
 ---
@@ -13,5 +13,5 @@ math: true
 
 ```
 ex)
-terraform import aws_instance.instance[\"a_instance"\] i-1234567
+terraform import aws_instance.instance[\"a_instance\"] i-1234567
 ```
