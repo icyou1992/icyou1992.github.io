@@ -1,5 +1,5 @@
 ---
-title:  Terraform 코드 구조에 대한 고찰
+title: Terraform 코드 구조에 대한 고찰
 author: icyou
 date: 2023-08-18 00:00:00 +0900
 categories: [Cloud]
