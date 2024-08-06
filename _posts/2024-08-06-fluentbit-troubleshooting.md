@@ -10,15 +10,16 @@ math: true
 
 ### Fluentbit OOM Trouble shooting
 ##### OOM 원인 분석
-Fluentbit에서 OOM이 발생하여 이에 대한 원인을 찾고 문제를 해결하는 과정을 기록했습니다.
+Fluentbit에서 아래와 같은 error log와 함께 OOM이 발생하여 이에 대한 원인을 찾고 문제를 해결하는 과정을 기록했습니다.  
+
+![Desktop View](/assets/img/posts/20240806/fluentbit-error-log.png){: .w-70 .normal}
 
 먼저, OOM 발생 원인을 찾기 위해 fluentbit log를 확인했을 때, OOM의 원인에 대한 이유는 나와있지 않아 있어서 원인을 유추하는 수밖에 없다고 생각했습니다.  
 다른 project의 fluentbit config, 동일 project에서 여러 region에서 발생하는 OOM의 pod 수 및 빈도 수를 확인하며 원인을 다음과 같이 유추했습니다.
 
-1. application log 설정이 debug level로 설정되어 있어 너무 많은 log가 쌓이고 있는 상황
-2. 이 상황에서, fluentbit에서 elasticsearch(es) 뿐만 아니라, s3에도 log를 쌓고 있어 log 쌓이는 속도가 가중되는 상황
-3. 하루에 s3에 쌓이는 log가 100GB 이상
-4. 
+1. application log 설정이 debug level로 설정되어 있어 너무 많은 log가 쌓이고 있는 상황  
+2. 이 상황에서, fluentbit에서 elasticsearch(es) 뿐만 아니라, s3에도 log를 쌓고 있어 log 쌓이는 속도가 가중되는 상황  
+3. 하루에 s3에 쌓이는 log가 100GB 이상  
 
 이 두 가설이 맞는지를 검증하기 위해서 DEV, QA 환경의 fluentbit config 설정을 변경하려고 했습니다. 두 번째 가설의 경우, s3로 log를 보내는 output 설정을 삭제하니 OOM이 발생하지 않는 것을 확인했지만 s3로 log를 보내는 것 또한 필수적이므로 삭제가 불가능한 상황이었고, 첫 번째 가설의 경우 PRD 환경의 application log가 많이 쌓이는 상황에서 debug level을 수정해야하는데, PRD 설정값을 수정하는 것은 불가능한 상황이라 가설 검증도 할 수 없었습니다.  
 
