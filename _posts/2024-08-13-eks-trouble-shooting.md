@@ -3,7 +3,7 @@ title:  EKS Batch 504 Error Trouble Shooting
 author: icyou
 date: 2024-08-13 00:00:00 +0900
 categories: [Cloud, AWS]
-tags: [AWS, EKS, 504]
+tags: [AWS, EKS, "504"]
 pin: true
 math: true
 ---
