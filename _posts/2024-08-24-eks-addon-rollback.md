@@ -13,8 +13,16 @@ EKS에 vpc-cni addon이 설치되어 있지 않아서, vpc-cni addon을 설치�
 
 해결방법은 addon으로 설치된 vpc-cni를 지우고 다시 직접 설치하는 것입니다. vpc-cni를 직접 설치하지 않아서 설치 방법을 몰랐지만 다행히도 stg, prd 환경의 eks 구성이 남아있었기 때문에, 이 구성을 보고 빠진 resource를 넣는 방식으로 해결할 수 있었습니다.  
 
-1. kubectl get po -n kube-system 명령어로 vpc-cni addon을 지우고 생긴 비정상적인 pod를 파악합니다.
-2. k describe ds aws-node -n kube-system 명령어로 해당 daemonset에서 무슨 문제가 발생했는지를 파악합니다.
+1. 
+```
+kubectl get po -n kube-system
+``` 
+명령어로 vpc-cni addon을 지우고 생긴 비정상적인 pod를 파악합니다.
+2. 
+```
+k describe ds aws-node -n kube-system
+``` 
+명령어로 해당 daemonset에서 무슨 문제가 발생했는지를 파악합니다.
 3. 이를 토대로 stg, prd 환경의 eks 구성과 비교하여 어떤 resource가 빠졌는지 확인합니다.
 4. daemonset, serviceaccount, secret, clusterrole, clusterrolebinding, customresourcedefinitions, eniconfig 등등이 있었습니다.
 5. 
